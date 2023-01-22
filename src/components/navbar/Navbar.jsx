@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri';
 import './navbar.css';
 import logo from '../../assets/logo.svg';
+
+const Menu = () => (
+    <>
+    <p><a href='#home'/>Home</p>
+    <p><a href='#waether'/>What is Aether?</p>
+    <p><a href='#functions'/>Functions</p>
+    <p><a href='#Blog'/>Blog</p>
+    </>
+)
+
 const Navbar = () => {
     const {toggleMenu, setToggleMenu} = useState(false);
     return (
@@ -12,10 +22,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='aether__navbar-links_container'>
-                <p><a href='#home'/>Home</p>
-                <p><a href='#waether'/>What is Aether?</p>
-                <p><a href='#functions'/>Functions</p>
-                <p><a href='#Blog'/>Blog</p>
+                <Menu />
             </div>
             <div className='aether__navbar-sign'>
             <p>Sign In</p>
@@ -29,10 +36,11 @@ const Navbar = () => {
                 {toggleMenu && (
                     <div className='aether__navbar-menu_container scale-up-center'>
                         <div className='aether__navbar-menu_container-links'>
-                            <p><a href='#home'/>Home</p>
-                            <p><a href='#waether'/>What is Aether?</p>
-                            <p><a href='#functions'/>Functions</p>
-                            <p><a href='#Blog'/>Blog</p>
+                            <Menu />
+                            <div className='aether__navbar-menu_container-links-sign'>
+                                <p>Sign In</p>
+                                <button type='button'>Sign Up</button>
+                            </div>
                         </div>
                     </div>
                     )}
