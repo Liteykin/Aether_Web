@@ -76,30 +76,6 @@
     border-bottom-right-radius: 5px;
 }
 
-.aether__header-content__people {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
-
-    margin-top: 2rem;
-}
-
-.aether__header-content__people img {
-    width: 181.79px;
-    height: 38px;
-}
-
-.aether__header-content__people p {
-    margin: 0 0 0 1rem;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 38px;
-    color: #fff;
-    text-align: center;
-}
 
 .aether__header-image {
     flex: 1;
@@ -132,14 +108,6 @@
     .aether__header-content p {
         font-size: 16px;
         line-height: 24px;
-    }
-
-    .aether__header-content__people {
-        flex-direction: column;
-    }
-
-    .aether__header-content__people p {
-        margin: 0;
     }
 
     .aether__header-content__input input,

@@ -1,22 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import {Footer, Blog, Functions, Features, WhatAether, Header} from './containers';
-import {CTA, Brand, Navbar } from './components';
+import {Footer, Features, WhatAether, Header} from './containers';
+import { Navbar } from './components';
 import './App.css';
 
 const App = () => {
+
+    const[returnedData, setReturnedData] = useState(['hello']);
+
+    const fetchData = async () => {
+        const newData = await fetch('/hello', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+            .then(res => res.json())
+            console.log(newData);
+            setReturnedData(newData);
+    }
     return (
         <div className='App'>
             <div className='gradient__bg'>
                 <Navbar />
                 <Header />
             </div>
-            <Brand />
             <WhatAether />
             <Features />
-            <Functions />
-            <CTA />
-            <Blog />
             <Footer />
         </div>
     );

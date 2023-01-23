@@ -8,8 +8,8 @@ const Header = () => {
     return (
         <div className="aether__header section__padding" id="home">
     <div className="aether__header-content">
-      <h1 className="gradient__text">The new Aether Bot</h1>
-      <p>Register for an email</p>
+      <h1 className="gradient__text">Meet Aether, the revolutionary AI that's changing the game with its advanced capabilities and unparalleled intelligence</h1>
+      <p>Experience the power of AI as it transforms your world with our cutting-edge technology.</p>
 
       <div className="aether__header-content__input">
         <input type="email" placeholder="Your Email Address" />
