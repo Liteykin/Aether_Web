@@ -47,21 +47,6 @@
     cursor: pointer;
 }
 
-.aether__navbar-sign button,
-.aether__navbar-menu_container button {
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #FF4820;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
 .aether__navbar-menu {
     margin-left: 1rem;
 
@@ -88,7 +73,7 @@
     margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .aether__navbar-menu_container p {

@@ -23,16 +23,6 @@
     font-family: var(--font-family);
 }
 
-.aether__features-heading p {
-    color: var(--color-subtext);
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    font-family: var(--font-family);
-
-    margin-top: 2rem;
-}
-
 .aether__features-container {
     flex: 1.5;
     display: flex;
@@ -57,4 +47,17 @@
         font-size: 28px;
         line-height: 38px;
     }
+}
+
+.aether__buttons {
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.aether__buttons:hover {
+    transform: scale(1.2);
+    text-shadow: white 0px 0px 20px 0px;
 }
